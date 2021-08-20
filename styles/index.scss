@@ -1,3 +1,5 @@
+@import './mixins';
+
 html,
 body {
     padding: 0;
@@ -78,7 +80,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
+    
 
     &__header {
         position: absolute;
@@ -105,6 +107,10 @@ a {
         border: solid white 2px;
         opacity: .9;
         box-shadow: 7px 5px 5px rgb(235, 199, 187);
+
+        @include tablet {
+            top: 30%;
+        }
 
     }
 

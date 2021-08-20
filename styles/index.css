@@ -76,7 +76,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
 }
 
 .hero-image__header {
@@ -108,6 +107,12 @@ a {
   opacity: .9;
   -webkit-box-shadow: 7px 5px 5px #ebc7bb;
           box-shadow: 7px 5px 5px #ebc7bb;
+}
+
+@media (min-width: 768px) {
+  .hero-image__button {
+    top: 30%;
+  }
 }
 
 .hero-image__button:hover {
