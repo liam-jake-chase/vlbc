@@ -98,11 +98,11 @@ a {
     &__header {
         position: absolute;
         top: 5%;
-        left: 15%;
+        left: 5%;
         border-radius: 1rem;
         opacity: .5;
         height: auto;
-        width: 70%;
+        width: 90%;
 
         @include desktop {
             top: 17%;
