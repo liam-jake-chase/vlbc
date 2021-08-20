@@ -186,12 +186,6 @@ a {
           text-decoration: var(--uirLinkTextDecoration) !important;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 768px) {
-  .r-link {
-    font-size: 1.5rem;
-  }
-}
-
 /* The component will reset browser's styles of list */
 .r-list {
   --uirListPaddingLeft: var(--rListPaddingLeft, 0);
@@ -307,15 +301,6 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   z-index: 2;
-}
-
-@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 768px) {
-  .menu__nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .menu__list {

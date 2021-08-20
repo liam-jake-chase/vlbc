@@ -198,10 +198,10 @@ a {
       color: var(--uirLinkTextColor) !important;
       text-decoration: var(--uirLinkTextDecoration) !important;
 
-      @include landscape {
-          font-size: 1.5rem;
+    //   @include landscape {
+    //       font-size: 1.5rem;
 
-      }
+    //   }
   }
 
   /* The component will reset browser's styles of list */
@@ -324,9 +324,9 @@ a {
     display: flex;
     align-items: flex-end;
     z-index: 2;
-    @include landscape {
-        flex-direction: row;
-    }
+    // @include landscape {
+    //     flex-direction: row;
+    // }
   }
 
   .menu__list{
