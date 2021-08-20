@@ -427,6 +427,16 @@ body {
   font-size: 1rem;
 }
 
+.navbar__container-two {
+  position: absolute;
+  left: 4rem;
+  bottom: 22.5rem;
+}
+
+.navbar__icon {
+  margin-right: 2rem;
+}
+
 .page {
   max-width: 380px;
   padding: 1rem;

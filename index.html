@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vancouver Island Barber Co.</title>
-    <link rel="stylesheet" href="./styles/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancouver Island Barber Co.</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="navbar__container">                
-                <a href="./index.html"><img class="navbar__logo" src="./icons/logo.jpg"></a>
-                <ul class="navbar__list">
-                    <li class="navbar__list-item navbar__list-item-active"><a href="#">HOME</a></li>
-                    <li class="navbar__list-item"><a href="#">ABOUT</a></li>
-                    <li class="navbar__list-item"><a href="#">CONTACT</a></li>
-                    <li class="navbar__list-item"><a href="#">BOOK NOW</a></li>
-                </ul>
-                <div class="navbar__container-two">
-                    <img class="navbar__icon" src="./icons/19000872561529659196-512.png" alt="phone">
-                    <img class="navbar__icon" src="./icons/Icon-facebook.svg" alt="facebook">
-                    <img class="navbar__icon" src="./icons/Icon-instagram.svg" alt="instagram">
-                    <img class="navbar__icon" src="./icons/Icon-twitter.svg" alt="twitter">
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="./index.html"><img class="navbar__logo" src="./icons/logo.jpg"></a>
+        <ul class="navbar__list">
+          <li class="navbar__list-item navbar__list-item-active"><a href="#">HOME</a></li>
+          <li class="navbar__list-item"><a href="#">ABOUT</a></li>
+          <li class="navbar__list-item"><a href="#">CONTACT</a></li>
+          <li class="navbar__list-item"><a href="#">BOOK NOW</a></li>
+        </ul>
+        <div class="navbar__container-two">
+          <img class="navbar__icon" src="./icons/19000872561529659196-512.png" alt="phone">
+          <img class="navbar__icon" src="./icons/Icon-facebook.svg" alt="facebook">
+          <img class="navbar__icon" src="./icons/Icon-instagram.svg" alt="instagram">
+          <img class="navbar__icon" src="./icons/Icon-twitter.svg" alt="twitter">
 
-                </div>
+        </div>
 
-            </div>
-
-        </nav>
-    </header>
-
-    <!-- Hero Image -->
-    <div class="hero-image">
-        <img class="hero-image__header" src="images/title.jpg">
-        <a href="#" class="hero-image__button">BOOK NOW</a>
-    </div>
-
-    <div class="menu">
-      <nav class="menu__nav">
-          <img class="menu__logo" src="./icons/logo.jpg" alt="logo">
-          <ul class="menu__list r-list">
-            <li class="menu__group">
-              <a href="#0" class="menu__link r-link">Home</a>
-            </li>
-            <li class="menu__group">
-              <a href="#0" class="menu__link r-link">About me</a>
-            </li>
-            <li class="menu__group">
-              <a href="#0" class="menu__link r-link">Services</a>
-            </li>            
-            <li class="menu__group">
-              <a href="#0" class="menu__link r-link">Contact</a>
-            </li>
-            <li class="menu__group">
-              <a href="#0" class="menu__link r-link">Book Now</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu__toggle r-button" type="button">
-          <span class="menu__hamburger m-hamburger">
-            <span class="m-hamburger__label">
-              <span class="menu__toggle-hint screen-reader">Open menu</span>
-            </span>
-          </span>
-        </button>
       </div>
-    
-      <script src="./js/index.js"></script>
+
+    </nav>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <img class="hero-image__header" src="images/title.jpg">
+    <a href="#" class="hero-image__button">BOOK NOW</a>
+  </div>
+
+  <!-- Menu button for mobile -->
+
+  <div class="menu">
+    <nav class="menu__nav">
+      <img class="menu__logo" src="./icons/logo.jpg" alt="logo">
+      <ul class="menu__list r-list">
+        <div class="navbar__container-two">
+          <img class="navbar__icon" src="./icons/185078_mail_email_icon.png" alt="email">
+          <img class="navbar__icon" src="./icons/19000872561529659196-512.png" alt="phone">
+          <img class="navbar__icon" src="./icons/Icon-facebook.svg" alt="facebook">
+          <a href="https://www.instagram.com/vancouverislandbarberco/" target="_blank"><img class="navbar__icon"
+              src="./icons/Icon-instagram.svg" alt="instagram"></a>
+
+
+
+        </div>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Home</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">About me</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Services</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Contact</a>
+        </li>
+        <li class="menu__group">
+          <a href="#0" class="menu__link r-link">Book Now</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu__toggle r-button" type="button">
+      <span class="menu__hamburger m-hamburger">
+        <span class="m-hamburger__label">
+          <span class="menu__toggle-hint screen-reader">Open menu</span>
+        </span>
+      </span>
+    </button>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
+
 </html>
