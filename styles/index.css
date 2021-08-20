@@ -115,6 +115,12 @@ a {
   }
 }
 
+@media (min-height: 375px) {
+  .hero-image__button {
+    top: 30%;
+  }
+}
+
 .hero-image__button:hover {
   background-color: #302b2b;
 }

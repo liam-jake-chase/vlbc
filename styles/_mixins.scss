@@ -2,18 +2,22 @@
 
 @mixin tablet {
     @media (min-width: $tablet-breakpoint) {
-      @content;
+        @content;
     }
-  }
-  
-  @mixin mobile {
-    @media (min-width: $mobile-breakpoint) {
-      @content;
-    }
-  }
 
-  @mixin desktop {
-    @media (min-width: $desktop-breakpoint) {
-      @content;
+    @media (min-height: 375px) {
+        @content;
     }
-  }
+}
+
+@mixin mobile {
+    @media (min-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
