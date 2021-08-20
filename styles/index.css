@@ -300,6 +300,7 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  margin-top: 1.5rem;
   position: relative;
 }
 
@@ -459,7 +460,7 @@ body {
 .navbar__container-two {
   position: absolute;
   left: 4rem;
-  bottom: 22.5rem;
+  bottom: 23.5rem;
 }
 
 @media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {

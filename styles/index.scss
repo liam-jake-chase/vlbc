@@ -310,7 +310,7 @@ a {
     width: var(--uiMenuCircleSize);
     height: var(--uiMenuCircleHeight);
     flex: none;
-  
+    margin-top: 1.5rem;
     position: relative;
   }
   
@@ -451,7 +451,7 @@ a {
   .navbar__container-two {
       position: absolute;
       left: 4rem;
-      bottom: 22.5rem;
+      bottom: 23.5rem;
 
       @include landscape {
           bottom: 5rem;
@@ -491,6 +491,7 @@ a {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    
   }
   
   .substack{
