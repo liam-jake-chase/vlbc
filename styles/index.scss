@@ -1,0 +1,117 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+ul {
+    margin: 0;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    display: none;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__logo {
+        height: 3rem;
+        margin-left: .5rem;
+        margin-top: .5rem;
+        border-radius: .5rem;
+    }
+
+    &__list {
+        display: flex;
+        color: white;
+        position: relative;
+        list-style: none;
+        margin: auto;
+        left: 2rem;
+
+    }
+
+    &__list-item {
+        padding: 1.5rem;
+        font-size: large;
+        font-weight: bolder;
+        color: white;
+
+    }
+
+    &__list-item:hover {
+        background-color: rgb(48, 43, 43);
+    }
+
+    &__list-item-active {
+        background-color: rgb(48, 43, 43);
+
+    }
+
+    &__icon {
+        height: 1.5rem;
+        margin-top: 1.5rem;
+        margin-right: .5rem;
+        position: relative;
+        right: 2rem;
+
+    }
+}
+
+
+/* Hero Image */
+.hero-image {
+    background-image: url('../images/mostafa-meraji--QcWbgrih1Q-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    &__header {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        border-radius: 1rem;
+        opacity: .5;
+        height: auto;
+        width: 70%;
+
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2rem;
+        background-color: rgb(216, 120, 84);
+        width: 5%;
+        border-radius: 1rem;
+        border: solid white 2px;
+        opacity: .9;
+        box-shadow: 7px 5px 5px rgb(235, 199, 187);
+
+    }
+
+    &__button:hover {
+        background-color: rgb(48, 43, 43);
+        
+
+    }
+
+}
