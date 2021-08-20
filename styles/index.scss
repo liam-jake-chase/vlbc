@@ -488,7 +488,7 @@ a {
   .menu__container-two {
       position: absolute;
       left: 2rem;
-      bottom: 26.5rem;
+      bottom: 20.5rem;
 
     //   @include landscape {
     //       bottom: 5rem;
@@ -532,6 +532,7 @@ a {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 2rem;
 
   }
 
