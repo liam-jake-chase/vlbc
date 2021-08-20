@@ -405,6 +405,14 @@ a {
   --menuHaburgerOutlineColor: var(--colorWhite);
 }
 
+.menu__logo {
+  height: 25%;
+  position: absolute;
+  bottom: 70%;
+  left: 14%;
+  border-radius: 4px;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
