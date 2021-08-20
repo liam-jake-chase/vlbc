@@ -22,7 +22,7 @@
 
 @mixin landscape {
     @media screen and (orientation:landscape)
-and (min-device-width: 321px) 
+and (min-device-width: 319px) 
 and (max-device-width: 768px) {
    @content
 }

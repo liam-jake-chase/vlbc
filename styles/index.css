@@ -19,6 +19,12 @@ a {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .navbar {
+    display: initial;
+  }
+}
+
 .navbar__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,12 +32,19 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: #d87854;
+  height: 4.5rem;
+}
+
+.navbar__container-two {
+  display: initial;
 }
 
 .navbar__logo {
   height: 3rem;
+  width: 4rem;
   margin-left: .5rem;
-  margin-top: .5rem;
+  margin-top: .7rem;
   border-radius: .5rem;
 }
 
@@ -88,6 +101,14 @@ a {
   width: 70%;
 }
 
+@media (min-width: 1024px) {
+  .hero-image__header {
+    top: 17%;
+    left: 2%;
+    width: 50%;
+  }
+}
+
 .hero-image__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,10 +130,16 @@ a {
           box-shadow: 7px 5px 5px #ebc7bb;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+@media (min-width: 768px) {
   .hero-image__button {
-    padding: 1rem;
-    top: 25%;
+    width: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-image__button {
+    top: 70%;
+    width: 9%;
   }
 }
 
@@ -159,7 +186,7 @@ a {
           text-decoration: var(--uirLinkTextDecoration) !important;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 768px) {
   .r-link {
     font-size: 1.5rem;
   }
@@ -259,6 +286,12 @@ a {
   z-index: var(--menuZindex, 9998);
 }
 
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -276,7 +309,7 @@ a {
   z-index: 2;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 768px) {
   .menu__nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -307,7 +340,7 @@ a {
 .menu__toggle::before {
   /*
     1. The font-size property is used to simplify calculations of the element's sizes and position
-    2. The negative value for the bottom property need for hiding half of circle. 
+    2. The negative value for the bottom property need for hiding half of circle.
     */
   content: "";
   width: 1em;
@@ -435,11 +468,9 @@ a {
   border-radius: 4px;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+@media (min-width: 1024px) {
   .menu__logo {
-    left: 20rem;
-    height: 35%;
-    bottom: 60%;
+    display: none;
   }
 }
 
@@ -457,20 +488,19 @@ body {
   font-size: 1rem;
 }
 
-.navbar__container-two {
+.menu__container-two {
   position: absolute;
-  left: 4rem;
-  bottom: 23.5rem;
+  left: 2rem;
+  bottom: 26.5rem;
 }
 
-@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
-  .navbar__container-two {
-    bottom: 5rem;
-    left: 22.5rem;
+@media (min-width: 1024px) {
+  .menu__container-two {
+    display: none;
   }
 }
 
-.navbar__icon {
+.menu__icon {
   margin-right: 2rem;
   height: 2rem;
 }
