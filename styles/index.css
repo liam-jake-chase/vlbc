@@ -147,6 +147,10 @@ a {
   background-color: #302b2b;
 }
 
+.hero-image__button:active {
+  border-radius: 1rem;
+}
+
 .r-button {
   --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
   --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));

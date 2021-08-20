@@ -149,6 +149,10 @@ a {
 
     }
 
+    &__button:active {
+        border-radius: 1rem;
+    }
+
 }
 
 // Menu style
