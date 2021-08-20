@@ -108,8 +108,9 @@ a {
         opacity: .9;
         box-shadow: 7px 5px 5px rgb(235, 199, 187);
 
-        @include tablet {
-            top: 30%;
+        @include landscape {
+            padding: 1rem;
+            top: 25%;
         }
 
     }
@@ -168,6 +169,11 @@ a {
       display: var(--uirLinkDisplay) !important;
       color: var(--uirLinkTextColor) !important;
       text-decoration: var(--uirLinkTextDecoration) !important;
+
+      @include landscape {
+          font-size: 1.5rem;
+          
+      }
   }
   
   /* The component will reset browser's styles of list */
@@ -271,6 +277,8 @@ a {
     bottom: 0;
     left: 0;
     z-index: var(--menuZindex, 9998);
+
+    
   }
   
   .menu__nav{
@@ -284,6 +292,9 @@ a {
     display: flex;
     align-items: flex-end;
     z-index: 2;
+    @include landscape {
+        flex-direction: row;
+    }
   }
   
   .menu__list{
@@ -420,6 +431,12 @@ a {
       bottom: 70%;
       left: 2rem;     
       border-radius: 4px;
+
+      @include landscape {
+          left: 20rem;
+          height: 35%;
+          bottom: 60%;
+      }
   }
   
   body{
@@ -435,6 +452,12 @@ a {
       position: absolute;
       left: 4rem;
       bottom: 22.5rem;
+
+      @include landscape {
+          bottom: 5rem;
+          left: 22.5rem;
+          
+      }
   }
 
   .navbar__icon {

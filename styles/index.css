@@ -109,15 +109,10 @@ a {
           box-shadow: 7px 5px 5px #ebc7bb;
 }
 
-@media (min-width: 768px) {
+@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
   .hero-image__button {
-    top: 30%;
-  }
-}
-
-@media (min-height: 375px) {
-  .hero-image__button {
-    top: 30%;
+    padding: 1rem;
+    top: 25%;
   }
 }
 
@@ -162,6 +157,12 @@ a {
   color: var(--uirLinkTextColor) !important;
   -webkit-text-decoration: var(--uirLinkTextDecoration) !important;
           text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+  .r-link {
+    font-size: 1.5rem;
+  }
 }
 
 /* The component will reset browser's styles of list */
@@ -273,6 +274,15 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   z-index: 2;
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+  .menu__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .menu__list {
@@ -424,6 +434,14 @@ a {
   border-radius: 4px;
 }
 
+@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+  .menu__logo {
+    left: 20rem;
+    height: 35%;
+    bottom: 60%;
+  }
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +460,13 @@ body {
   position: absolute;
   left: 4rem;
   bottom: 22.5rem;
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 321px) and (max-device-width: 768px) {
+  .navbar__container-two {
+    bottom: 5rem;
+    left: 22.5rem;
+  }
 }
 
 .navbar__icon {

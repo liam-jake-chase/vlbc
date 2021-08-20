@@ -5,9 +5,7 @@
         @content;
     }
 
-    @media (min-height: 375px) {
-        @content;
-    }
+
 }
 
 @mixin mobile {
@@ -20,4 +18,12 @@
     @media (min-width: $desktop-breakpoint) {
         @content;
     }
+}
+
+@mixin landscape {
+    @media screen and (orientation:landscape)
+and (min-device-width: 321px) 
+and (max-device-width: 768px) {
+   @content
+}
 }
