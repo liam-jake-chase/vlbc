@@ -570,7 +570,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .services__item {
@@ -582,7 +582,7 @@ body {
 }
 
 .services__description {
-  color: white;
+  color: #b9b2b2;
   margin-left: 2.45rem;
   font-size: .7rem;
 }
