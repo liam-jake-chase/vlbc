@@ -158,7 +158,7 @@ a {
   --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
   --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
   --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
-  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
+  --uirButtonFontSize: var(--rButtonFontSize, inherit);
   --uirButtonColor: var(--rButtonColor);
   background-color: var(--uirButtonBackgroundColor);
   padding: var(--uirButtonPadding);
@@ -537,5 +537,53 @@ body {
     right: 1rem;
     bottom: 1rem;
   }
+}
+
+.services {
+  height: 80%;
+}
+
+.services__header {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.services__container {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 80%;
+  background-color: black;
+  border-radius: 1rem;
+  border: #d87854 solid 2px;
+  opacity: .7;
+}
+
+.services__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.services__item {
+  margin-left: 1rem;
+}
+
+.services__price {
+  margin-right: 1rem;
+}
+
+.services__description {
+  color: white;
+  margin-left: 2.45rem;
+  font-size: .6rem;
 }
 /*# sourceMappingURL=index.css.map */

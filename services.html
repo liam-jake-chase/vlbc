@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Island Barber Co.</title>
+  <title>Vancouver Island Barber Co. - Services</title>
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 
@@ -17,9 +17,9 @@
       <div class="navbar__container">
         <a href="./index.html"><img class="navbar__logo" src="./icons/logo.jpg"></a>
         <ul class="navbar__list">
-          <li class="navbar__list-item navbar__list-item-active"><a href="#">HOME</a></li>
+          <li class="navbar__list-item"><a href="index.html">HOME</a></li>
           <li class="navbar__list-item"><a href="#">ABOUT</a></li>
-          <li class="navbar__list-item"><a href="./services.html">SERVICES</a></li>
+          <li class="navbar__list-item navbar__list-item-active"><a href="#">SERVICES</a></li>
           <li class="navbar__list-item"><a href="#">CONTACT</a></li>
           <li class="navbar__list-item"><a
               href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132">BOOK
@@ -41,12 +41,26 @@
     </nav>
   </header>
 
-  <!-- Hero Image --> 
+  <!-- Services Section -->
   <div class="hero-image">
-    <img class="hero-image__header" src="images/title.jpg">
-    <a href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132"
-      class="hero-image__button">BOOK NOW</a>
+    <div class="services">
+      <h1 class="services__header">SERVICES</h1>
+      <div class="services__container">
+        <div class="services__item-container">
+          <li class="services__item">Kids Cut</li>
+          <div class="services__price">CA $25</div>
+        </div>
+        <div class="services__description">Haircut and style - 30 Mins</div>
+        <div class="services__item-container">
+          <li class="services__item">Buzz Cut</li>
+          <div class="services__price">CA $25</div>
+        </div>
+        <div class="services__description">One length all over and wash - 30 Mins</div>
+      </div>
+    </div>
   </div>
+
+
 
   <!-- Menu button for mobile -->
 
@@ -71,7 +85,7 @@
           <a href="#0" class="menu__link r-link">About</a>
         </li>
         <li class="menu__group">
-          <a href="./services.html" class="menu__link r-link">Services</a>
+          <a href="services.html" class="menu__link r-link">Services</a>
         </li>
         <li class="menu__group">
           <a href="#0" class="menu__link r-link">Contact</a>
