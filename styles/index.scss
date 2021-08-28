@@ -657,7 +657,7 @@ body {
 
 .contact {
 
-  height: 35rem;
+  height: 32rem;
 
   @include tablet {
     height: 38rem;
@@ -682,7 +682,7 @@ body {
   }
 
   &__container {
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
     height: 80%;
@@ -715,11 +715,41 @@ body {
     margin-left: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
   }
 
   &__address {
     color: white;
     margin-left: 1rem;
+    margin-top: 1rem;
+    ;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-name {
+    color: white;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__form-input {
+    width: 85%;
+    margin-left: 1rem;
+    height: 1.5rem;
+    border-radius: .25rem;
+  }
+
+  &__form-text {
+    height: 8rem;
+    width: 85%;
+    margin-left: 1rem;
+    border-radius: .25rem;
   }
 
 }
