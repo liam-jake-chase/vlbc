@@ -685,6 +685,11 @@ body {
   }
 }
 
+.contact__subheader {
+  color: white;
+  text-align: center;
+}
+
 .contact__container {
   margin-top: 8%;
   margin-left: auto;
