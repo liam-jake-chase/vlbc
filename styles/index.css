@@ -715,9 +715,21 @@ body {
   margin-left: 9.5%;
 }
 
+@media (min-width: 1024px) {
+  .contact__map-container {
+    height: 18rem;
+  }
+}
+
 .contact__map {
   width: 88%;
   border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .contact__map {
+    height: 18rem;
+  }
 }
 
 .contact__address-header {

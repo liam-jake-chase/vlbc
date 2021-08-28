@@ -708,11 +708,19 @@ body {
     margin-right: auto;
     margin-left: 9.5%;
 
+    @include desktop {
+      height: 18rem;
+    }
+
   }
 
   &__map {
     width: 88%;
     border-radius: 1rem;
+
+    @include desktop {
+      height: 18rem;
+    }
   }
 
   &__address-header {
