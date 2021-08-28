@@ -652,4 +652,54 @@ body {
     margin-left: 3.4rem;
   }
 }
+
+.contact {
+  height: 35rem;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    height: 38rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50rem;
+  }
+}
+
+.contact__header {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .contact__header {
+    margin-top: 3rem;
+  }
+}
+
+.contact__container {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 80%;
+  background-color: black;
+  border-radius: 1rem;
+  border: #d87854 solid 2px;
+  opacity: .7;
+}
+
+@media (min-width: 768px) {
+  .contact__container {
+    margin-top: 5%;
+  }
+}
 /*# sourceMappingURL=index.css.map */

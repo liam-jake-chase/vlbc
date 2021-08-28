@@ -652,3 +652,49 @@ body {
     
   }
 }
+
+// Contact Section
+
+.contact {
+
+  height: 35rem;
+
+  @include tablet {
+    height: 38rem;
+  }
+
+  @include desktop {
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50rem;
+  }
+
+  &__header {
+    color: white;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+
+    @include desktop {
+      margin-top: 3rem;
+    }
+  }
+
+  &__container {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 80%;
+    background-color: black;
+    border-radius: 1rem;
+    border: $orange solid 2px;
+    opacity: .7;
+
+    @include tablet {
+      margin-top: 5%;
+    }
+  }
+
+}
