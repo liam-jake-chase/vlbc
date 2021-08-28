@@ -702,4 +702,16 @@ body {
     margin-top: 5%;
   }
 }
+
+.contact__map-container {
+  position: relative;
+  top: 2rem;
+  margin-right: auto;
+  margin-left: 9.5%;
+}
+
+.contact__map {
+  width: 88%;
+  border-radius: 1rem;
+}
 /*# sourceMappingURL=index.css.map */
