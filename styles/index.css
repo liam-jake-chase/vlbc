@@ -714,4 +714,16 @@ body {
   width: 88%;
   border-radius: 1rem;
 }
+
+.contact__address-header {
+  color: white;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact__address {
+  color: white;
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=index.css.map */
