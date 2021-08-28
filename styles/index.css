@@ -654,7 +654,7 @@ body {
 }
 
 .contact {
-  height: 32rem;
+  height: 31rem;
 }
 
 @media (min-width: 768px) {
@@ -694,7 +694,7 @@ body {
   background-color: black;
   border-radius: 1rem;
   border: #d87854 solid 2px;
-  opacity: .7;
+  opacity: .9;
 }
 
 @media (min-width: 768px) {
