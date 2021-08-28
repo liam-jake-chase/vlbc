@@ -549,11 +549,26 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .services {
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50rem;
+  }
+}
+
 .services__header {
   color: white;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .services__header {
+    margin-top: 3rem;
+  }
 }
 
 .services__container {
@@ -595,6 +610,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .services__item {
+    font-size: 1.7rem;
+  }
+}
+
 .services__price {
   margin-right: 1rem;
 }
@@ -602,6 +623,13 @@ body {
 @media (min-width: 768px) {
   .services__price {
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__price {
+    font-size: 1.7rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -615,6 +643,13 @@ body {
   .services__description {
     font-size: .8rem;
     margin-left: 2.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__description {
+    font-size: 1.2rem;
+    margin-left: 3.4rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

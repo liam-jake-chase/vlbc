@@ -568,11 +568,22 @@ body {
     height: 38rem;
   }
 
+  @include desktop {
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50rem;
+  }
+
   &__header {
     color: white;
     margin-left:auto;
     margin-right: auto;
     text-align: center;
+
+    @include desktop {
+      margin-top: 3rem;
+    }
   }
 
   &__container {
@@ -604,6 +615,10 @@ body {
     @include tablet {
       font-size: 1.25rem;
     }
+
+    @include desktop {
+      font-size: 1.7rem;
+    }
   }
 
   &__price {
@@ -612,6 +627,11 @@ body {
     @include tablet {
       font-size: 1.25rem;
       
+    }
+
+    @include desktop {
+      font-size: 1.7rem;
+      margin-right: 1.5rem;
     }
   }
 
@@ -623,6 +643,11 @@ body {
     @include tablet {
       font-size: .8rem;
       margin-left: 2.8rem;
+    }
+
+    @include desktop {
+      font-size: 1.2rem;
+      margin-left: 3.4rem;
     }
     
   }
