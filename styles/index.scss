@@ -564,6 +564,10 @@ body {
 
   height: 35rem;
 
+  @include tablet {
+    height: 38rem;
+  }
+
   &__header {
     color: white;
     margin-left:auto;
@@ -581,6 +585,10 @@ body {
     border-radius: 1rem;
     border: $orange solid 2px;
     opacity: .7;
+
+    @include tablet {
+      margin-top: 5%;
+    }
   }
 
   &__item-container {
@@ -592,16 +600,30 @@ body {
 
   &__item {
     margin-left: 1rem;
+
+    @include tablet {
+      font-size: 1.25rem;
+    }
   }
 
   &__price {
     margin-right: 1rem;
+
+    @include tablet {
+      font-size: 1.25rem;
+      
+    }
   }
 
   &__description {
     color: rgb(185, 178, 178);
     margin-left: 2.45rem;
     font-size: .7rem;
+
+    @include tablet {
+      font-size: .8rem;
+      margin-left: 2.8rem;
+    }
     
   }
 }
