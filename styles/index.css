@@ -654,13 +654,7 @@ body {
 }
 
 .contact {
-  height: 31rem;
-}
-
-@media (min-width: 768px) {
-  .contact {
-    height: 31rem;
-  }
+  height: 34rem;
 }
 
 @media (min-width: 1024px) {
@@ -668,7 +662,6 @@ body {
     width: 45rem;
     margin-left: auto;
     margin-right: auto;
-    height: 31rem;
   }
 }
 
@@ -776,5 +769,16 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: .25rem;
+}
+
+.contact__form-button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 2rem;
+  border-radius: .5rem;
+  background-color: #d87854;
+  border: white solid 1px;
 }
 /*# sourceMappingURL=index.css.map */
