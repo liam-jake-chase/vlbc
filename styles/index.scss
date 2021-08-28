@@ -595,7 +595,7 @@ body {
     background-color: black;
     border-radius: 1rem;
     border: $orange solid 2px;
-    opacity: .7;
+    opacity: .8;
 
     @include tablet {
       margin-top: 5%;
@@ -659,13 +659,13 @@ body {
 
   height: 34rem;
 
-  
+
 
   @include desktop {
     width: 45rem;
     margin-left: auto;
     margin-right: auto;
-    
+
   }
 
   &__header {
@@ -708,6 +708,7 @@ body {
 
     @include desktop {
       height: 18rem;
+      margin-bottom: 2rem;
     }
 
   }
@@ -715,27 +716,12 @@ body {
   &__map {
     width: 88%;
     border-radius: 1rem;
+    
 
     @include desktop {
       height: 18rem;
+      margin-bottom: 2rem;
     }
-  }
-
-  &__address-header {
-    color: white;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  &__address {
-    color: white;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    ;
-    text-align: center;
   }
 
   &__form {

@@ -580,7 +580,7 @@ body {
   background-color: black;
   border-radius: 1rem;
   border: #d87854 solid 2px;
-  opacity: .7;
+  opacity: .8;
 }
 
 @media (min-width: 768px) {
@@ -711,6 +711,7 @@ body {
 @media (min-width: 1024px) {
   .contact__map-container {
     height: 18rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -722,23 +723,8 @@ body {
 @media (min-width: 1024px) {
   .contact__map {
     height: 18rem;
+    margin-bottom: 2rem;
   }
-}
-
-.contact__address-header {
-  color: white;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.contact__address {
-  color: white;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  text-align: center;
 }
 
 .contact__form {
