@@ -682,6 +682,7 @@ body {
 .contact__subheader {
   color: white;
   text-align: center;
+  font-size: 2rem;
 }
 
 .contact__container {
@@ -792,5 +793,56 @@ body {
   border-radius: .5rem;
   background-color: #d87854;
   border: white solid 1px;
+}
+
+@media (min-width: 1024px) {
+  .contact__container-bottom {
+    height: 10rem;
+    position: relative;
+    top: 5rem;
+    left: 23%;
+    border: solid #d87854 2px;
+    border-radius: 1rem;
+    width: 60.5%;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__container-bottom-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__container-email {
+    border-bottom: dotted #d87854 2px;
+    height: 5rem;
+  }
+  .contact__email-title {
+    font-size: 1.5rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    margin-left: 1.35rem;
+    letter-spacing: .35rem;
+  }
+  .contact__email {
+    position: relative;
+    top: .8rem;
+    left: 1.5rem;
+    letter-spacing: .35rem;
+  }
+  .contact__vl {
+    border-left: dotted #d87854 2px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

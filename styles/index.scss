@@ -683,6 +683,7 @@ body {
   &__subheader {
     color: white;
     text-align: center;
+    font-size: 2rem;
   }
 
   &__container {
@@ -783,5 +784,63 @@ body {
     background-color: $orange;
     border: white solid 1px;
   }
+
+  @include desktop {
+    &__container-bottom {
+      height: 10rem;
+      position:relative;
+      top: 5rem;
+      left: 23%;
+      border: solid $orange 2px;
+      border-radius: 1rem;
+      width: 60.5%;
+      background-color: black;
+      opacity: .8;
+      color: white;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__container-bottom-flex {
+      display: flex;
+      justify-content: space-between;
+     
+    }
+
+    &__container-email {
+      border-bottom: dotted $orange 2px;
+      height: 5rem;
+    }
+
+    &__email-title {
+      font-size: 1.5rem;
+      position: relative;
+      top: 1rem;
+      left: 1rem;
+      margin-left: 1.35rem;
+      letter-spacing: .35rem;
+    }
+
+    &__email {
+      position: relative;
+      top: .8rem;
+      left: 1.5rem;
+      letter-spacing: .35rem;
+    }
+
+    &__container-address {
+      
+    }
+
+    &__vl {
+      border-left: dotted $orange 2px;
+    }
+
+    
+
+
+  }
+
 
 }
