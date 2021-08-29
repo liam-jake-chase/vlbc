@@ -800,10 +800,11 @@ body {
     height: 10rem;
     position: relative;
     top: 5rem;
-    left: 23%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid #d87854 2px;
     border-radius: 1rem;
-    width: 60.5%;
+    width: 39rem;
     background-color: black;
     opacity: .8;
     color: white;
@@ -822,27 +823,56 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 8rem;
   }
   .contact__container-email {
-    border-bottom: dotted #d87854 2px;
+    border-bottom: double #d87854 3px;
     height: 5rem;
   }
   .contact__email-title {
-    font-size: 1.5rem;
     position: relative;
     top: 1rem;
     left: 1rem;
-    margin-left: 1.35rem;
     letter-spacing: .35rem;
   }
   .contact__email {
     position: relative;
-    top: .8rem;
+    top: 1rem;
     left: 1.5rem;
     letter-spacing: .35rem;
   }
+  .contact__phone-title {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    letter-spacing: .35rem;
+  }
+  .contact__phone {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    letter-spacing: .35rem;
+    font-size: .75rem;
+  }
+  .contact__address-title {
+    position: relative;
+    top: .8rem;
+    right: 5rem;
+    letter-spacing: .35rem;
+    text-align: left;
+  }
+  .contact__address {
+    position: relative;
+    top: 2rem;
+    right: 5rem;
+    letter-spacing: .35rem;
+    text-align: left;
+    font-size: .75rem;
+  }
   .contact__vl {
-    border-left: dotted #d87854 2px;
+    border-left: double #d87854 3px;
+    position: relative;
+    left: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

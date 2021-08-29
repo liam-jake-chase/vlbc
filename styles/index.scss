@@ -790,10 +790,11 @@ body {
       height: 10rem;
       position:relative;
       top: 5rem;
-      left: 23%;
+      margin-left: auto;
+      margin-right: auto;
       border: solid $orange 2px;
       border-radius: 1rem;
-      width: 60.5%;
+      width: 39rem;
       background-color: black;
       opacity: .8;
       color: white;
@@ -805,36 +806,69 @@ body {
     &__container-bottom-flex {
       display: flex;
       justify-content: space-between;
+      height: 8rem;
      
     }
 
     &__container-email {
-      border-bottom: dotted $orange 2px;
+      border-bottom: double $orange 3px;
       height: 5rem;
     }
 
     &__email-title {
-      font-size: 1.5rem;
+      
       position: relative;
       top: 1rem;
       left: 1rem;
-      margin-left: 1.35rem;
+      
       letter-spacing: .35rem;
     }
 
     &__email {
       position: relative;
-      top: .8rem;
+      top: 1rem;
       left: 1.5rem;
       letter-spacing: .35rem;
     }
 
-    &__container-address {
+    &__phone-title {
+      position: relative;
+      top: 1rem;
+      left: 1rem;
+      letter-spacing: .35rem;
       
     }
 
+    &__phone {
+      position: relative;
+      top: 2rem;
+      left: 1rem;
+      letter-spacing: .35rem;
+      font-size: .75rem;;
+
+    }
+
+    &__address-title {
+      position: relative;
+      top: .8rem;
+      right: 5rem;
+      letter-spacing: .35rem;
+      text-align: left;
+    }
+
+    &__address {
+      position: relative;
+      top: 2rem;
+      right: 5rem;
+      letter-spacing: .35rem;
+      text-align: left;
+      font-size: .75rem;
+    }
+
     &__vl {
-      border-left: dotted $orange 2px;
+      border-left: double $orange 3px;
+      position: relative;
+      left: 1rem;
     }
 
     
