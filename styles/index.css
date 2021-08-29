@@ -659,9 +659,10 @@ body {
 
 @media (min-width: 1024px) {
   .contact {
-    width: 45rem;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    height: 43rem;
   }
 }
 
@@ -701,6 +702,29 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .contact__container {
+    position: relative;
+    width: 40%;
+    margin-top: 0;
+    top: 3rem;
+    height: 27rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 .contact__map-container {
   position: relative;
   top: 2rem;
@@ -710,8 +734,9 @@ body {
 
 @media (min-width: 1024px) {
   .contact__map-container {
-    height: 18rem;
-    margin-bottom: 2rem;
+    top: 2.82rem;
+    width: 40%;
+    height: 100%;
   }
 }
 
@@ -722,8 +747,9 @@ body {
 
 @media (min-width: 1024px) {
   .contact__map {
-    height: 18rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    border: solid #d87854 2px;
+    height: 27rem;
   }
 }
 
