@@ -562,6 +562,7 @@ body {
   color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -671,6 +672,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 0;
 }
 
 @media (min-width: 1024px) {
@@ -682,11 +684,23 @@ body {
 .contact__subheader {
   color: white;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact__subheader {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__subheader {
+    font-size: 2rem;
+  }
 }
 
 .contact__container {
-  margin-top: 8%;
+  margin-top: 4%;
   margin-left: auto;
   margin-right: auto;
   height: 80%;
@@ -699,7 +713,7 @@ body {
 
 @media (min-width: 768px) {
   .contact__container {
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
 
@@ -728,7 +742,7 @@ body {
 
 .contact__map-container {
   position: relative;
-  top: 2rem;
+  top: 1rem;
   margin-right: auto;
   margin-left: 9.5%;
 }
@@ -773,19 +787,32 @@ body {
 .contact__form-input {
   margin-right: 1rem;
   margin-left: 1rem;
-  height: 1.5rem;
+  height: 1.2rem;
   border-radius: .25rem;
 }
 
+@media (min-width: 1024px) {
+  .contact__form-input {
+    height: 1.5rem;
+  }
+}
+
 .contact__form-text {
-  height: 8rem;
+  height: 4rem;
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: .25rem;
 }
 
+@media (min-width: 1024px) {
+  .contact__form-text {
+    height: 8rem;
+  }
+}
+
 .contact__form-button {
-  margin-top: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
@@ -793,6 +820,61 @@ body {
   border-radius: .5rem;
   background-color: #d87854;
   border: white solid 1px;
+}
+
+@media (min-width: 1024px) {
+  .contact__form-button {
+    margin-top: .8rem;
+  }
+}
+
+.contact__container-bottom {
+  height: 10rem;
+  position: relative;
+  top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid #d87854 2px;
+  border-radius: 1rem;
+  width: 80%;
+  background-color: black;
+  opacity: .8;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact__email-title, .contact__phone-title, .contact__address-title {
+  display: none;
+}
+
+.contact__container-email {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__email, .contact__phone, .contact__address {
+  font-size: .9rem;
+  letter-spacing: .3px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact__email, .contact__phone, .contact__address {
+    font-size: 1.3rem;
+  }
+}
+
+.contact__phone {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -816,6 +898,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact__email-title, .contact__phone-title, .contact__address-title {
+    display: initial;
+  }
   .contact__container-bottom-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -828,24 +913,27 @@ body {
   .contact__container-email {
     border-bottom: double #d87854 3px;
     height: 5rem;
+    width: 100%;
   }
   .contact__email-title {
     position: relative;
     top: 1rem;
-    left: 1rem;
+    left: 2rem;
     letter-spacing: .35rem;
   }
   .contact__email {
     position: relative;
     top: 1rem;
-    left: 1.5rem;
+    left: 2.5rem;
     letter-spacing: .35rem;
+    font-size: 1rem;
   }
   .contact__phone-title {
     position: relative;
     top: 1rem;
     left: 1rem;
     letter-spacing: .35rem;
+    font-size: 1rem;
   }
   .contact__phone {
     position: relative;
