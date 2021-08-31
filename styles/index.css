@@ -451,10 +451,10 @@ a {
 
 .menu__logo {
   height: auto;
-  max-height: 25rem;
+  max-height: 18rem;
   width: 80%;
   position: absolute;
-  bottom: 50%;
+  bottom: 55%;
   left: 10%;
   right: auto;
   margin-right: auto;
