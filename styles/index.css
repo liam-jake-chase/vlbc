@@ -455,7 +455,7 @@ a {
   width: 80%;
   position: absolute;
   bottom: 55%;
-  left: 10%;
+  left: 2rem;
   right: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -464,7 +464,10 @@ a {
 @media (min-width: 768px) {
   .menu__logo {
     max-width: 60%;
+    max-height: 25rem;
+    height: 25rem;
     left: 2rem;
+    bottom: 50%;
   }
 }
 
