@@ -52,6 +52,8 @@
   jsMenuNode.querySelector(`.${menuClassesNames.toggleClass}`).addEventListener('click', toggleMenu);
 })();
 
+//validation for form so nothing can submit without all fields filled in
+
 const post = document.querySelector('form');
 post.oninput = () => {
   post.querySelector('#submitbutton').disabled = [...post.querySelectorAll(':scope > [name]')]
