@@ -88,7 +88,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110vh;
+  height: 120vh;
 }
 
 .hero-image__header {
@@ -138,7 +138,7 @@ a {
 
 @media (min-width: 1024px) {
   .hero-image__button {
-    top: 70%;
+    top: 60%;
     width: 9%;
   }
 }
@@ -807,7 +807,7 @@ body {
 
 @media (min-width: 1024px) {
   .contact__form-input {
-    height: 1.5rem;
+    height: 2rem;
   }
 }
 
@@ -838,7 +838,7 @@ body {
 
 @media (min-width: 1024px) {
   .contact__form-button {
-    margin-top: .8rem;
+    margin-top: .4rem;
   }
 }
 

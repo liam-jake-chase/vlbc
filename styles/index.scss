@@ -6,7 +6,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial;
-}
+
+  }
 
 ul {
   margin: 0;
@@ -92,7 +93,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110vh;
+  height: 120vh;
+  
 
 
   &__header {
@@ -137,8 +139,9 @@ a {
     }
 
     @include desktop {
-      top: 70%;
+      top: 60%;
       width: 9%;
+      
     }
 
   }
@@ -507,7 +510,7 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 20.5rem;
-  
+
 
   //   @include landscape {
   //       bottom: 5rem;
@@ -790,7 +793,7 @@ body {
     border-radius: .25rem;
 
     @include desktop {
-    height: 1.5rem;
+      height: 2rem;
     }
   }
 
@@ -802,7 +805,7 @@ body {
 
     @include desktop {
       height: 8rem;
-      }
+    }
   }
 
   &__form-button {
@@ -817,7 +820,7 @@ body {
     border: white solid 1px;
 
     @include desktop {
-      margin-top: .8rem;
+      margin-top: .4rem;
     }
   }
 
@@ -883,9 +886,11 @@ body {
       flex-direction: column;
     }
 
-    &__email-title, &__phone-title, &__address-title {
+    &__email-title,
+    &__phone-title,
+    &__address-title {
       display: initial;
-      
+
     }
 
     &__container-bottom-flex {
@@ -898,7 +903,8 @@ body {
     &__container-email {
       border-bottom: double $orange 3px;
       height: 5rem;
-      width: 100%;;
+      width: 100%;
+      ;
     }
 
     &__email-title {
@@ -925,7 +931,7 @@ body {
       letter-spacing: .35rem;
       font-size: 1rem;
 
-    
+
     }
 
     &__phone {
@@ -968,3 +974,5 @@ body {
 
 
 }
+
+// Animations
