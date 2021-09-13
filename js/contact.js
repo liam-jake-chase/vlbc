@@ -33,7 +33,7 @@ window.onload = () => {
 
       };
 
-      $.ajax('https://formsubmit.co/ajax/josh.fusillo@gmail.com', {
+      $.ajax('https://formsubmit.co/ajax/contact@vancouverislandbarberco.ca', {
         type: 'POST',
 
         data: JSON.stringify(data),

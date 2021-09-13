@@ -84,7 +84,7 @@ a {
 
 /* Hero Image */
 .hero-image {
-  background-image: url("../images/mostafa-meraji--QcWbgrih1Q-unsplash.jpg");
+  background-image: url("../images/241490108_896028371345530_5111674621820227109_n.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -451,11 +451,11 @@ a {
 
 .menu__logo {
   height: auto;
-  max-height: 18rem;
-  width: 80%;
+  max-height: 19rem;
+  width: 95%;
   position: absolute;
   bottom: 55%;
-  left: 2rem;
+  margin-left: 2.5%;
   right: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -466,8 +466,8 @@ a {
     max-width: 60%;
     max-height: 25rem;
     height: 25rem;
-    left: 2rem;
-    bottom: 50%;
+    left: 1rem;
+    bottom: 48%;
   }
 }
 
@@ -554,12 +554,13 @@ body {
 }
 
 .services {
-  height: 35rem;
+  color: grey;
+  height: 37rem;
 }
 
 @media (min-width: 768px) {
   .services {
-    height: 38rem;
+    height: 40.5rem;
   }
 }
 
@@ -568,7 +569,8 @@ body {
     width: 45rem;
     margin-left: auto;
     margin-right: auto;
-    height: 50rem;
+    height: 52rem;
+    color: grey;
   }
 }
 
@@ -578,6 +580,13 @@ body {
   margin-right: auto;
   margin-top: 1rem;
   text-align: center;
+  color: #251f1f;
+  font-weight: bold;
+  padding: .5rem;
+  opacity: .7;
+  background-color: white;
+  width: 78%;
+  border-radius: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -590,7 +599,7 @@ body {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  height: 80%;
+  height: 90%;
   width: 80%;
   background-color: black;
   border-radius: 1rem;
@@ -682,11 +691,17 @@ body {
 }
 
 .contact__header {
-  color: white;
+  color: #251f1f;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 1rem;
+  font-weight: bold;
+  padding: .5rem;
+  opacity: .7;
+  background-color: white;
+  width: 78%;
+  border-radius: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -893,7 +908,7 @@ body {
 
 @media (min-width: 1024px) {
   .contact__container-bottom {
-    height: 10rem;
+    height: 12rem;
     position: relative;
     top: 5rem;
     margin-left: auto;
