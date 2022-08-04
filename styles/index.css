@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+}
+
 /* Navigation Bar */
 .navbar {
   display: none;
@@ -22,6 +27,8 @@ a {
 @media (min-width: 1024px) {
   .navbar {
     display: initial;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -34,6 +41,8 @@ a {
           justify-content: space-evenly;
   background-color: #d87854;
   height: 4.5rem;
+  width: 100%;
+  height: 5rem;
 }
 
 .navbar__container-two {
@@ -43,9 +52,9 @@ a {
 .navbar__logo {
   height: 3rem;
   width: 4rem;
-  margin-left: .5rem;
-  margin-top: .7rem;
-  border-radius: .5rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
 }
 
 .navbar__list {
@@ -64,6 +73,8 @@ a {
   font-size: large;
   font-weight: bolder;
   color: white;
+  text-decoration: none;
+  border-radius: 0.15rem;
 }
 
 .navbar__list-item:hover {
@@ -76,10 +87,42 @@ a {
 
 .navbar__icon {
   height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-left: .75rem;
+  margin-top: 1.8rem;
+  margin-left: 0.75rem;
   position: relative;
   right: 2rem;
+}
+
+.modal {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  z-index: 9999;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-color: #d87854;
+}
+
+.modal-content {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-color: #d87854;
+}
+
+.modal__button {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-color: #d87854;
+}
+
+.modal__frame {
+  height: 40rem;
+  width: auto;
+  z-index: 9999;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-color: #d87854;
 }
 
 /* Hero Image */
@@ -96,7 +139,7 @@ a {
   top: 5%;
   left: 5%;
   border-radius: 1rem;
-  opacity: .5;
+  opacity: 0.5;
   height: auto;
   width: 90%;
 }
@@ -125,7 +168,7 @@ a {
   width: 5%;
   border-radius: 1rem;
   border: solid white 2px;
-  opacity: .9;
+  opacity: 0.9;
   -webkit-box-shadow: 7px 5px 5px #ebc7bb;
           box-shadow: 7px 5px 5px #ebc7bb;
 }
@@ -153,7 +196,11 @@ a {
 
 .r-button {
   --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
-  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+  --uirButtonPadding: var(
+    --rButtonPadding,
+    var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0)
+      var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0)
+  );
   --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
   --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
   --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
@@ -263,7 +310,10 @@ a {
   --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
   --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
   --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
-  --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+  --rButtonPaddingTop: calc(
+    var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) -
+      var(--uiMenuCircleOffset)
+  );
   --hamburgerWidth: var(--uiMenuHamburgerWidth);
   --hamburgerHeight: var(--uiMenuHamburgerHeight);
   --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
@@ -295,8 +345,8 @@ a {
           box-sizing: border-box;
   width: 100%;
   height: 0;
-  -webkit-transition: opacity .2s ease-out;
-  transition: opacity .2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,9 +389,9 @@ a {
   background-color: var(--uiMenuCircleBackgroundColor);
   border-radius: 50%;
   position: absolute;
-  bottom: -.5em;
+  bottom: -0.5em;
   /* 2 */
-  left: calc(50% - .5em);
+  left: calc(50% - 0.5em);
   z-index: -1;
   will-change: width, height;
   -webkit-transition: width 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98), height 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98), -webkit-transform 0.25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
@@ -356,8 +406,8 @@ a {
 .m-hamburger__label {
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
-  -webkit-transition-duration: .15s;
-          transition-duration: .15s;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
 }
 
 .m-hamburger::before,
@@ -395,10 +445,10 @@ a {
           flex-grow: 1;
   opacity: 1;
   will-change: opacity;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .menu_activated .menu__toggle::before {
@@ -487,7 +537,7 @@ body {
           flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
 }
 
@@ -529,7 +579,7 @@ body {
 
 .menu__group {
   --rLinkTextColor: var(--colorWhite);
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -537,7 +587,7 @@ body {
 }
 
 .substack {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   background-color: #fff;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
@@ -582,8 +632,8 @@ body {
   text-align: center;
   color: #251f1f;
   font-weight: bold;
-  padding: .5rem;
-  opacity: .7;
+  padding: 0.5rem;
+  opacity: 0.7;
   background-color: white;
   width: 78%;
   border-radius: 1rem;
@@ -604,7 +654,7 @@ body {
   background-color: black;
   border-radius: 1rem;
   border: #d87854 solid 2px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
@@ -621,7 +671,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .services__item {
@@ -636,7 +686,7 @@ body {
 
 @media (min-width: 1024px) {
   .services__item {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -660,12 +710,12 @@ body {
 .services__description {
   color: #b9b2b2;
   margin-left: 2.45rem;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 768px) {
   .services__description {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-left: 2.8rem;
   }
 }
@@ -697,8 +747,8 @@ body {
   text-align: center;
   margin-top: 1rem;
   font-weight: bold;
-  padding: .5rem;
-  opacity: .7;
+  padding: 0.5rem;
+  opacity: 0.7;
   background-color: white;
   width: 78%;
   border-radius: 1rem;
@@ -737,7 +787,7 @@ body {
   background-color: black;
   border-radius: 1rem;
   border: #d87854 solid 2px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 @media (min-width: 768px) {
@@ -817,7 +867,7 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
   height: 1.2rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -830,7 +880,7 @@ body {
   height: 4rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -840,20 +890,20 @@ body {
 }
 
 .contact__form-button {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
   height: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: #d87854;
   border: white solid 1px;
 }
 
 @media (min-width: 1024px) {
   .contact__form-button {
-    margin-top: .4rem;
+    margin-top: 0.4rem;
   }
 }
 
@@ -867,7 +917,7 @@ body {
   border-radius: 1rem;
   width: 80%;
   background-color: black;
-  opacity: .8;
+  opacity: 0.8;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,8 +941,8 @@ body {
 }
 
 .contact__email, .contact__phone, .contact__address {
-  font-size: .9rem;
-  letter-spacing: .3px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
   text-align: center;
 }
 
@@ -917,7 +967,7 @@ body {
     border-radius: 1rem;
     width: 39rem;
     background-color: black;
-    opacity: .8;
+    opacity: 0.8;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -948,43 +998,43 @@ body {
     position: relative;
     top: 1rem;
     left: 2rem;
-    letter-spacing: .35rem;
+    letter-spacing: 0.35rem;
   }
   .contact__email {
     position: relative;
     top: 1rem;
     left: 2.5rem;
-    letter-spacing: .35rem;
+    letter-spacing: 0.35rem;
     font-size: 1rem;
   }
   .contact__phone-title {
     position: relative;
     top: 1rem;
     left: 1rem;
-    letter-spacing: .35rem;
+    letter-spacing: 0.35rem;
     font-size: 1rem;
   }
   .contact__phone {
     position: relative;
     top: 2rem;
     left: 1rem;
-    letter-spacing: .35rem;
-    font-size: .75rem;
+    letter-spacing: 0.35rem;
+    font-size: 0.75rem;
   }
   .contact__address-title {
     position: relative;
-    top: .8rem;
+    top: 0.8rem;
     right: 5rem;
-    letter-spacing: .35rem;
+    letter-spacing: 0.35rem;
     text-align: left;
   }
   .contact__address {
     position: relative;
     top: 2rem;
     right: 5rem;
-    letter-spacing: .35rem;
+    letter-spacing: 0.35rem;
     text-align: left;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .contact__vl {
     border-left: double #d87854 3px;
@@ -994,57 +1044,30 @@ body {
 }
 
 .about {
-  color: grey;
-  height: 37rem;
-}
-
-@media (min-width: 768px) {
-  .about {
-    height: 40.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about {
-    width: 45rem;
-    margin-left: auto;
-    margin-right: auto;
-    height: 52rem;
-    color: grey;
-  }
-}
-
-.about__header {
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  text-align: center;
-  color: #251f1f;
-  font-weight: bold;
-  padding: .5rem;
-  opacity: .7;
-  background-color: white;
-  width: 78%;
-  border-radius: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .about__header {
-    margin-top: 3rem;
-  }
+  height: 100vh;
 }
 
 .about__container {
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 90%;
-  width: 80%;
   background-color: black;
+  opacity: 0.9;
+  color: white;
+  width: 78.5%;
+  max-height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-behavior: auto;
+  overflow: auto;
+  margin: auto;
+  margin-top: 2rem;
   border-radius: 1rem;
-  border: #d87854 solid 2px;
-  opacity: .8;
+  border: #d87854 solid 3px;
+}
+
+.about__items-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,46 +1075,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-@media (min-width: 768px) {
-  .about__container {
-    margin-top: 5%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+@media (min-width: 1024px) {
+  .about__items-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 79%;
   }
 }
 
 .about__image {
-  margin-top: 1rem;
-  height: 20rem;
-  padding: 0 1rem 0 1rem;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
-  max-width: 15rem;
+  width: 100%;
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about__image {
-    height: 30rem;
+    width: 50%;
   }
 }
 
-.about__description {
-  margin: 0 1rem 0 1rem;
-  color: white;
+.about__text {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 1.7rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.about__list {
   text-align: left;
 }
 /*# sourceMappingURL=index.css.map */

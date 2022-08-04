@@ -4,9 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Island Barber Co. - About</title>
+  <title>Vancouver Island Barber Co.</title>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="shortcut icon" href="./icons/logo.jpg">
+  <link rel="shortcut icon" href="./icon/logo.jpg">
 </head>
 
 
@@ -16,46 +22,99 @@
   <header>
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="./index.html"><img class="navbar__logo" src="./icons/logo.jpg"></a>
+        <a href="./index.html"><img class="navbar__logo" src="./icon/logo.jpg" alt="logo"></a>
         <ul class="navbar__list">
           <li class="navbar__list-item"><a href="index.html">HOME</a></li>
-          <li class="navbar__list-item navbar__list-item-active"><a href="#">ABOUT</a></li>
-          <li class="navbar__list-item"><a href="#">SERVICES</a></li>
-          <li class="navbar__list-item"><a href="./contact.html">CONTACT</a></li>
-          <li class="navbar__list-item"><a
-              href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132">BOOK
-              NOW</a></li>
+          <li class="navbar__list-item navbar__list-item-active"><a href="about.html">ABOUT</a></li>
+          <li class="navbar__list-item"><a href="./services.html">SERVICES</a></li>
+          <li class="navbar__list-item">
+            <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#"
+              >BOOK NOW</a
+            >
+          </li>
         </ul>
         <div class="navbar__container-two">
-          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="navbar__icon"
-              src="./icons/185078_mail_email_icon.png" alt="email"></a>
-          <a href="tel:1-250-746-3658"><img class="navbar__icon" src="./icons/19000872561529659196-512.png"
+          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="navbar__icon" src="./icon/185078_mail_email_icon.png" alt="email"></a>
+          <a href="tel:1-250-746-3658"><img class="navbar__icon" src="./icon/19000872561529659196-512.png"
               alt="phone"></a>
           <a href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371" target="_blank"><img
-              class="navbar__icon" src="./icons/Icon-facebook.svg" alt="facebook"></a>
+              class="navbar__icon" src="./icon/Icon-facebook.svg" alt="facebook"></a>
           <a href="https://www.instagram.com/vancouverislandbarberco/" target="_blank"><img class="navbar__icon"
-              src="./icons/Icon-instagram.svg" alt="instagram"></a>
+              src="./icon/Icon-instagram.svg" alt="instagram"></a>
 
         </div>
-
-      </div>
+        
 
     </nav>
   </header>
 
-  <!-- About Section -->
+  <!-- Large modal -->
+
+  <div
+  class="modal fade bd-example-modal-lg"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <iframe
+        class="modal__frame"
+        src="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPehbEIpn0tYSdtrpDbI1UICinsjzBl71baJlAQI78z3e314CKr8zwYO+kF0aQCKW3/daVfASJqcwtyjnIasG7AxyffKaLo7CcbO5hdxzI2WN/AhnyzUbCyMDT42XdhKMN8v2OFlN+SBNkH5t1mlkBQxKFOREmrcZV41E59fxfVIKYXNITu9oeemoCgSQvYJyrmNjsFc64wwx1E3PxsThndNkDRlrPODbJUzTVZqDZLmJ87FPne/DiufITBcuY/rVHmmgTXWCVTqVqwTERO4+X30G+f+kDIkyohWhxDfOWghvYeordgiDmvRpDYdBjEifoFDaOy9hraCMn6DyJR6WYY0JxWQlmseNzMzPaX5ubgi"
+      ></iframe>
+      <button
+        type="button"
+        class="btn btn-secondary modal__button"
+        data-dismiss="modal"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade bd-example-modal-sm"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="mySmallModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">...</div>
+  </div>
+</div>
+
+
+  <!-- Hero Image --> 
   <div class="hero-image">
     <div class="about">
-      <h1 class="about__header">ABOUT</h1>
+      <h1 class="contact__header">ABOUT ME</h1>
       <div class="about__container">
-        <img class="about__image" src="images/240777022_410988793790574_6116817544749425604_n.jpg" alt="image-of-josh" />
-        <div class="about__description">Enter words here about Josh and his journey to open his own place!</div>
+        <div class="about__items-container">
+          <img class="about__image" src="images/about.jpeg" alt="about">
+          <div class="about__text-container">
+          <div class="about__text"><b>Vancouver Island Barber Co.</b> has long been a dream for owner, Josh Neufeld. He has worked in the haircutting industry for over 5 years. During this time, he built upon his styling skills and natural client rapport to begin delivering a vision in fall of 2021 of a barbershop that excels at providing customers with the feeling of being part of an exciting, collaborative haircut experience.<p>
+
+          Focusing on men’s hairstyle and grooming needs, Josh firmly believes that a haircut provides more for clients than a simple cut and style. When first visiting Vancouver Island Barber Co., you’ll immediately notice the welcoming atmosphere. This is no accident. Josh makes it a priority to provide an environment in which men of all ages, members of marginalized communities and those with physical and social challenges can safely experience a boost of self-esteem and confidence through expertly-crafted haircuts and an atmosphere of respect and camaraderie. What distinguishes Vancouver Island Barber Co. as the barber shop for you is that Josh and team will provide a you with stylish and satisfying look as highly a valued member of the Vancouver Island Barber Co. community. <p></p>
+            
+            Some of the things that sets this barbershop apart are:<p>
+            <ul class="about__list">
+              <li>a dedicated hair station with enhanced accessibility for those with mobility concerns</li><br>
+            <li>discounted cuts to members of Vancouver Island’s first responders and Indigenous community members</li><br>
+            <li>it’s a LGBTQ2+ positive business</li><br>
+            <li>minimizes the barbershop’s footprint on the environment with innovative methods and low-impact products</li><br>
+            <li>builds community and others’ self-esteem through volunteerism (e.g. free and/or deeply discounted haircuts for individuals in need through partnerships with community service groups such as hospice and youth mentorship organizations - fill out the contact page to reach out to Josh about these services)</li><br>
+              </li>
+            </ul>
+          </div>
+           </div>
+        </div>
       </div>
-    </div>
-
   </div>
-
-
+    
+  
 
   <!-- Menu button for mobile -->
 
@@ -64,14 +123,13 @@
       <img class="menu__logo" src="./images/Untitled_Artwork clear.svg" alt="logo">
       <ul class="menu__list r-list">
         <div class="menu__container-two">
-          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="menu__icon"
-              src="./icons/185078_mail_email_icon.png" alt="email"></a>
-          <a href="tel:1-250-746-3658"><img class="menu__icon phone-icon" src="./icons/19000872561529659196-512.png"
+          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="menu__icon" src="./icon/185078_mail_email_icon.png" alt="email"></a>
+          <a href="tel:1-250-746-3658"><img class="menu__icon phone-icon" src="./icon/19000872561529659196-512.png"
               alt="phone"></a>
           <a href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371" target="_blank"><img
-              class="menu__icon" src="./icons/Icon-facebook.svg" alt="facebook"></a>
+              class="menu__icon" src="./icon/Icon-facebook.svg" alt="facebook"></a>
           <a href="https://www.instagram.com/vancouverislandbarberco/" target="_blank"><img class="menu__icon"
-              src="./icons/Icon-instagram.svg" alt="instagram"></a>
+              src="./icon/Icon-instagram.svg" alt="instagram"></a>
         </div>
 
         <li class="menu__group">
@@ -81,14 +139,16 @@
           <a href="#0" class="menu__link r-link">About</a>
         </li>
         <li class="menu__group">
-          <a href="about.html" class="menu__link r-link">Services</a>
+          <a href="./services.html" class="menu__link r-link">Services</a>
         </li>
         <li class="menu__group">
-          <a href="./contact.html" class="menu__link r-link">Contact</a>
-        </li>
-        <li class="menu__group">
-          <a href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132"
-            class="menu__link r-link">Book Now</a>
+          <a
+            href="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPehbEIpn0tYSdtrpDbI1UICinsjzBl71baJlAQI78z3e314CKr8zwYO+kF0aQCKW3/daVfASJqcwtyjnIasG7AxyffKaLo7CcbO5hdxzI2WN/AhnyzUbCyMDT42XdhKMN8v2OFlN+SBNkH5t1mlkBQxKFOREmrcZV41E59fxfVIKYXNITu9oeemoCgSQvYJyrmNjsFc64wwx1E3PxsThndNkDRlrPODbJUzTVZqDZLmJ87FPne/DiufITBcuY/rVHmmgTXWCVTqVqwTERO4+X30G+f+kDIkyohWhxDfOWghvYeordgiDmvRpDYdBjEifoFDaOy9hraCMn6DyJR6WYY0JxWQlmseNzMzPaX5ubgi"
+            class="menu__link r-link"
+            data-toggle="modal"
+            data-target=".bd-example-modal-lg"
+            >Book Now</a
+          >
         </li>
       </ul>
     </nav>
@@ -99,9 +159,20 @@
         </span>
       </span>
     </button>
-  </div>
 
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   <script src="./js/index.js"></script>
 </body>
 

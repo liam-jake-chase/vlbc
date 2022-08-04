@@ -1,147 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vancouver Island Barber Co. - Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="./icon/logo.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Island Barber Co. - Services</title>
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="shortcut icon" href="./icons/logo.jpg">
-</head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="./index.html"
+            ><img class="navbar__logo" src="./icon/logo.jpg"
+          /></a>
+          <ul class="navbar__list">
+            <li class="navbar__list-item"><a href="index.html">HOME</a></li>
+            <li class="navbar__list-item"><a href="about.html">ABOUT</a></li>
+            <li class="navbar__list-item navbar__list-item-active">
+              <a href="#">SERVICES</a>
+            </li>
+            <li class="navbar__list-item">
+              <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#"
+                >BOOK NOW</a
+              >
+            </li>
+          </ul>
+          <div class="navbar__container-two">
+            <a href="mailto:contact@vancouverislandbarberco.ca"
+              ><img
+                class="navbar__icon"
+                src="./icon/185078_mail_email_icon.png"
+                alt="email"
+            /></a>
+            <a href="tel:1-250-746-3658"
+              ><img
+                class="navbar__icon"
+                src="./icon/19000872561529659196-512.png"
+                alt="phone"
+            /></a>
+            <a
+              href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371"
+              target="_blank"
+              ><img
+                class="navbar__icon"
+                src="./icon/Icon-facebook.svg"
+                alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/vancouverislandbarberco/"
+              target="_blank"
+              ><img
+                class="navbar__icon"
+                src="./icon/Icon-instagram.svg"
+                alt="instagram"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <!-- Large modal -->
 
-<body>
-
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="./index.html"><img class="navbar__logo" src="./icons/logo.jpg"></a>
-        <ul class="navbar__list">
-          <li class="navbar__list-item"><a href="index.html">HOME</a></li>
-          <li class="navbar__list-item"><a href="#">ABOUT</a></li>
-          <li class="navbar__list-item navbar__list-item-active"><a href="#">SERVICES</a></li>
-          <li class="navbar__list-item"><a href="./contact.html">CONTACT</a></li>
-          <li class="navbar__list-item"><a
-              href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132">BOOK
-              NOW</a></li>
-        </ul>
-        <div class="navbar__container-two">
-          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="navbar__icon"
-              src="./icons/185078_mail_email_icon.png" alt="email"></a>
-          <a href="tel:1-250-746-3658"><img class="navbar__icon" src="./icons/19000872561529659196-512.png"
-              alt="phone"></a>
-          <a href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371" target="_blank"><img
-              class="navbar__icon" src="./icons/Icon-facebook.svg" alt="facebook"></a>
-          <a href="https://www.instagram.com/vancouverislandbarberco/" target="_blank"><img class="navbar__icon"
-              src="./icons/Icon-instagram.svg" alt="instagram"></a>
-
-        </div>
-
-      </div>
-
-    </nav>
-  </header>
-
-  <!-- Services Section -->
-  <div class="hero-image">
-    <div class="services">
-      <h1 class="services__header">SERVICES</h1>
-      <div class="services__container">
-        <div class="services__item-container">
-          <li class="services__item">Kids Cut</li>
-          <div class="services__price">$25</div>
-        </div>
-        <div class="services__description">Haircut and style
-          <div>30 Mins</div>
-        </div>
-        <div class="services__item-container">
-          <li class="services__item">Buzz Cut</li>
-          <div class="services__price">$25</div>
-        </div>
-        <div class="services__description">One length all over, no wash
-          <div>30 Mins</div>
-        </div>
-        <div class="services__item-container">
-          <li class="services__item">Buzz Cut & Beard Trim</li>
-          <div class="services__price">$40</div>
-        </div>
-        <div class="services__description">One length all over, beard shape & line up
-          <div>30 Mins</div>
-        </div>
-        <div class="services__item-container">
-          <li class="services__item">Haircut</li>
-          <div class="services__price">$30</div>
-        </div>
-        <div class="services__description">Wash, cut, and style
-          <div>30 Mins</div>
-        </div>
-        <div class="services__item-container">
-          <li class="services__item">Beard Trim</li>
-          <div class="services__price">$15</div>
-        </div>
-        <div class="services__description">Handcrafted beard shape and line up
-          <div>15 Mins</div>
-        </div>
-        <div class="services__item-container">
-          <li class="services__item">Haircut & Beard Trim</li>
-          <div class="services__price">$45</div>
-        </div>
-        <div class="services__description">Wash, cut, style,beard shape and line up
-          <div>30 Mins</div>
+    <div
+      class="modal fade bd-example-modal-lg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <iframe
+            class="modal__frame"
+            src="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPehbEIpn0tYSdtrpDbI1UICinsjzBl71baJlAQI78z3e314CKr8zwYO+kF0aQCKW3/daVfASJqcwtyjnIasG7AxyffKaLo7CcbO5hdxzI2WN/AhnyzUbCyMDT42XdhKMN8v2OFlN+SBNkH5t1mlkBQxKFOREmrcZV41E59fxfVIKYXNITu9oeemoCgSQvYJyrmNjsFc64wwx1E3PxsThndNkDRlrPODbJUzTVZqDZLmJ87FPne/DiufITBcuY/rVHmmgTXWCVTqVqwTERO4+X30G+f+kDIkyohWhxDfOWghvYeordgiDmvRpDYdBjEifoFDaOy9hraCMn6DyJR6WYY0JxWQlmseNzMzPaX5ubgi"
+          ></iframe>
+          <button
+            type="button"
+            class="btn btn-secondary modal__button"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>
-  </div>
 
+    <div
+      class="modal fade bd-example-modal-sm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">...</div>
+      </div>
+    </div>
 
-
-  <!-- Menu button for mobile -->
-
-  <div class="menu">
-    <nav class="menu__nav">
-      <img class="menu__logo" src="./images/Untitled_Artwork clear.svg" alt="logo">
-      <ul class="menu__list r-list">
-        <div class="menu__container-two">
-          <a href="mailto:contact@vancouverislandbarberco.ca"><img class="menu__icon"
-              src="./icons/185078_mail_email_icon.png" alt="email"></a>
-          <a href="tel:1-250-746-3658"><img class="menu__icon phone-icon" src="./icons/19000872561529659196-512.png"
-              alt="phone"></a>
-          <a href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371" target="_blank"><img
-              class="menu__icon" src="./icons/Icon-facebook.svg" alt="facebook"></a>
-          <a href="https://www.instagram.com/vancouverislandbarberco/" target="_blank"><img class="menu__icon"
-              src="./icons/Icon-instagram.svg" alt="instagram"></a>
+    <!-- Services Section -->
+    <div class="hero-image">
+      <div class="services">
+        <h1 class="services__header">SERVICES</h1>
+        <div class="services__container">
+          <div class="services__item-container">
+            <li class="services__item">Kids Cut</li>
+            <div class="services__price">$25</div>
+          </div>
+          <div class="services__description">
+            Haircut and style
+            <div>30 Mins</div>
+          </div>
+          <div class="services__item-container">
+            <li class="services__item">Buzz Cut</li>
+            <div class="services__price">$25</div>
+          </div>
+          <div class="services__description">
+            One length all over, no wash
+            <div>30 Mins</div>
+          </div>
+          <div class="services__item-container">
+            <li class="services__item">Buzz Cut & Beard Trim</li>
+            <div class="services__price">$40</div>
+          </div>
+          <div class="services__description">
+            One length all over, beard shape & line up
+            <div>30 Mins</div>
+          </div>
+          <div class="services__item-container">
+            <li class="services__item">Haircut</li>
+            <div class="services__price">$30</div>
+          </div>
+          <div class="services__description">
+            Wash, cut, and style
+            <div>30 Mins</div>
+          </div>
+          <div class="services__item-container">
+            <li class="services__item">Beard Trim</li>
+            <div class="services__price">$15</div>
+          </div>
+          <div class="services__description">
+            Handcrafted beard shape and line up
+            <div>15 Mins</div>
+          </div>
+          <div class="services__item-container">
+            <li class="services__item">Haircut & Beard Trim</li>
+            <div class="services__price">$45</div>
+          </div>
+          <div class="services__description">
+            Wash, cut, style,beard shape and line up
+            <div>30 Mins</div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <li class="menu__group">
-          <a href="./index.html" class="menu__link r-link">Home</a>
-        </li>
-        <li class="menu__group">
-          <a href="#0" class="menu__link r-link">About</a>
-        </li>
-        <li class="menu__group">
-          <a href="services.html" class="menu__link r-link">Services</a>
-        </li>
-        <li class="menu__group">
-          <a href="./contact.html" class="menu__link r-link">Contact</a>
-        </li>
-        <li class="menu__group">
-          <a href="https://www.fresha.com/a/vancouver-island-barber-co-duncan-60-queens-road-zjhkutoh/booking?menu=true&dppub=true&employeeId=1551132"
-            class="menu__link r-link">Book Now</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="menu__toggle r-button" type="button">
-      <span class="menu__hamburger m-hamburger">
-        <span class="m-hamburger__label">
-          <span class="menu__toggle-hint screen-reader">Open menu</span>
+    <!-- Menu button for mobile -->
+
+    <div class="menu">
+      <nav class="menu__nav">
+        <img
+          class="menu__logo"
+          src="./images/Untitled_Artwork clear.svg"
+          alt="logo"
+        />
+        <ul class="menu__list r-list">
+          <div class="menu__container-two">
+            <a href="mailto:contact@vancouverislandbarberco.ca"
+              ><img
+                class="menu__icon"
+                src="./icon/185078_mail_email_icon.png"
+                alt="email"
+            /></a>
+            <a href="tel:1-250-746-3658"
+              ><img
+                class="menu__icon phone-icon"
+                src="./icon/19000872561529659196-512.png"
+                alt="phone"
+            /></a>
+            <a
+              href="https://facebook.com/Vancouver-Island-Barber-co-105852591802371"
+              target="_blank"
+              ><img
+                class="menu__icon"
+                src="./icon/Icon-facebook.svg"
+                alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/vancouverislandbarberco/"
+              target="_blank"
+              ><img
+                class="menu__icon"
+                src="./icon/Icon-instagram.svg"
+                alt="instagram"
+            /></a>
+          </div>
+
+          <li class="menu__group">
+            <a href="./index.html" class="menu__link r-link">Home</a>
+          </li>
+          <li class="menu__group">
+            <a href="about.html" class="menu__link r-link">About</a>
+          </li>
+          <li class="menu__group">
+            <a href="services.html" class="menu__link r-link">Services</a>
+          </li>
+          <li class="menu__group">
+            <a
+              href="https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVPehbEIpn0tYSdtrpDbI1UICinsjzBl71baJlAQI78z3e314CKr8zwYO+kF0aQCKW3/daVfASJqcwtyjnIasG7AxyffKaLo7CcbO5hdxzI2WN/AhnyzUbCyMDT42XdhKMN8v2OFlN+SBNkH5t1mlkBQxKFOREmrcZV41E59fxfVIKYXNITu9oeemoCgSQvYJyrmNjsFc64wwx1E3PxsThndNkDRlrPODbJUzTVZqDZLmJ87FPne/DiufITBcuY/rVHmmgTXWCVTqVqwTERO4+X30G+f+kDIkyohWhxDfOWghvYeordgiDmvRpDYdBjEifoFDaOy9hraCMn6DyJR6WYY0JxWQlmseNzMzPaX5ubgi"
+              class="menu__link r-link"
+              data-toggle="modal"
+              data-target=".bd-example-modal-lg"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="menu__toggle r-button" type="button">
+        <span class="menu__hamburger m-hamburger">
+          <span class="m-hamburger__label">
+            <span class="menu__toggle-hint screen-reader">Open menu</span>
+          </span>
         </span>
-      </span>
-    </button>
-  </div>
+      </button>
+    </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./js/index.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
